@@ -1,5 +1,7 @@
 n, k = input().split(" ")
-if n[-1] == "0":
-    print("hoyay")
-elif n[-1] != "0":
-    print("dfasdf")
+for _ in range(int(k)):
+    if int(n) % 10 == 0:
+        n = n[:-1]
+    else:
+        n = str(int(n) - 1)
+print(n)
