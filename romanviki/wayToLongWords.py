@@ -1,0 +1,11 @@
+def code(s):
+    if len(s) > 10:
+        return s[0] + str(len(s) - 2) + s[-1]
+    else:
+        return s
+
+
+n = int(input())
+for i in range(n):
+    s = str(input())
+    print(code(s=s))
